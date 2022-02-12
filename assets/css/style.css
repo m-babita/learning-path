@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+
 /* variables */
 :root{
   --header-height:2rem;
@@ -185,8 +187,9 @@
 }
 
 .show-menu{
-  right: 0 ;
+  right: 0!important; 
 }
+
 .login{
   border: 1px solid #D9D9D9;
   box-sizing: border-box;
@@ -208,7 +211,7 @@
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
-    background-color: var(--container-color);
+    background-color: white;
     width: 80%;
     height: 100%;
     top: 0;
