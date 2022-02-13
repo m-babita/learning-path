@@ -3,7 +3,7 @@
 .frontend__container{
     margin-top: 5rem ;
     padding: var(--mb-2);
-    
+    color: white;
   }
 
 
@@ -34,6 +34,58 @@
   .frontend-projects{
     color : rgba(255, 255, 255, 0.8);
   }
+/* task */
+.task{
+  margin-top: 2rem;
+  text-align: center;
+}
+.tas__title{
+  margin-top: 2rem;
+}
+.task__subtitle{
+  font-size:1rem;
+  padding: 0 1rem;
+  
+}
+.tasks{
+  display:grid;
+  margin:var(--mb-1);
+  padding:var(--mb-1);
+  gap: 2rem;;
+}
+/* week */
+
+
+.week__head{
+  left:1rem;
+  padding-left: 2rem;;
+}
+
+.week__container{
+  padding: 1rem;
+  margin: 1rem 2rem;
+  background-color: var(--container-color);
+}
+.weel__description{
+  font-weight: 900;
+}
+.work__lists{
+  display: grid;
+}
+.work__list{
+  
+  margin: 2rem;
+ 
+  font-weight: 900;
+  
+}
+li:first-child{
+  font-size: large;
+  font-weight: bold;
+}
+li{
+  padding: .5rem;
+}
 
   @media screen and (min-width: 576px){
   
@@ -66,4 +118,13 @@
         padding:.5rem  ;
         justify-content: center;
       }
+      .week__container{
+        padding: 2rem;
+        margin: 2rem 2rem 3rem;
+      }
+      .tasks, 
+      .work__lists{
+        grid-template-columns: repeat(3,1fr);
+      }
+      
   }
