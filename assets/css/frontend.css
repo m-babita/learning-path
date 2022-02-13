@@ -39,7 +39,7 @@
   margin-top: 2rem;
   text-align: center;
 }
-.tas__title{
+.task__title{
   margin-top: 2rem;
 }
 .task__subtitle{
@@ -47,11 +47,14 @@
   padding: 0 1rem;
   
 }
+
+
 .tasks{
   display:grid;
   margin:var(--mb-1);
   padding:var(--mb-1);
-  gap: 2rem;;
+  align-content:baseline ;
+  gap: 2rem;
 }
 /* week */
 
@@ -122,9 +125,18 @@ li{
         padding: 2rem;
         margin: 2rem 2rem 3rem;
       }
+      .task__title{
+        margin: 1.5rem 0;
+      }
       .tasks, 
       .work__lists{
+        align-items: center;
         grid-template-columns: repeat(3,1fr);
       }
+      img{
+        width:auto;
+        height:11rem;
+      }
+      
       
   }
